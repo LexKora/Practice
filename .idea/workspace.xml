@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="382c91ff-5a40-4701-9009-af8f48f2957c" name="Changes" comment="">
+    <list default="true" id="382c91ff-5a40-4701-9009-af8f48f2957c" name="Changes" comment="move3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tic-tac-toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/tic-tac-toe.py" afterDir="false" />
     </list>
@@ -99,5 +99,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="move3" />
+    <option name="LAST_COMMIT_MESSAGE" value="move3" />
   </component>
 </project>

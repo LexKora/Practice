@@ -1,7 +1,5 @@
 # попытка номер 4
-empty = '-'
-cross = 'X'
-zero = 'O'
+empty, cross, zero = '-', 'X', 'O'
 flag = False
 FIELD = {x: [empty] for x in (11, 12, 13, 21, 22, 23, 31, 32, 33)}
 valid_filds = [{key: FIELD[key] for key, sim in FIELD.items() if list(str(key))[j] == str(i)} for i in range(1, 4)
@@ -67,9 +65,9 @@ def computer_move():
         if not flag:
             for key__, sym___ in FIELD.items():
                 if (int(list(str(key__))[0]) + int(list(str(key__))[1])) % 2 == 0 and sym___[0] == empty and \
-                        (FIELD[11][0] != FIELD[33][0]) == cross and FIELD[13][0] == FIELD[31][0] == cross :
+                        (FIELD[11][0] == empty or FIELD[33][0] == empty) and (FIELD[13][0] == empty or FIELD[31][0] ==
+                                                                              empty):
                     FIELD[key__][0] = zero
-                    print('!!!')
                     flag = True
                     break
 
@@ -77,7 +75,6 @@ def computer_move():
                 if sym___[0] == empty and (int(list(str(key__))[0]) + int(list(str(key__))[1])) % 2 != 0 and\
                         not flag:
                     FIELD[key__][0] = zero
-                    print('???')
                     break
 
 
